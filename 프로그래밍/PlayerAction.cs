@@ -32,5 +32,15 @@ public class PlayerAction : MonoBehaviour
         {
             manager.qeustTwoCheck = false;
         }
+
+        // C2 - Q2 : Shape
+        if (other.gameObject.tag.Equals("Square"))
+        {
+            manager.qeust4Check = true;
+        }
+        else if (other.gameObject.tag.Equals("Circle") || other.gameObject.tag.Equals("Triangle"))
+        {
+            manager.qeust4Check = false;
+        }
     }
 }
